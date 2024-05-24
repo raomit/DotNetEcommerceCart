@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main class="container">
+    <div class="container">
+        <a class = "d-flex justify-content-end align-items-baseline" id="goToCartLink" href="/Product/GetGuestCart" style="cursor: pointer">
+            <h3>
+                Cart Items-
+            </h3>
+            <h3 id="cartItemsCount">
+                0
+            </h3>
+        </a>
+    </div>
+    <table class="table" id="products_table">
+        <thead>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Actions</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</main>
+
+@section scripts{
+    @Scripts.Render("~/Content/Assets/Js/main");    
+}
