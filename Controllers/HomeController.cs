@@ -10,6 +10,7 @@ namespace EcommCart.Controllers
     {
         public ActionResult Index()
         {
+            //comment added by suketu
             return View();
         }
 
